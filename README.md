@@ -1,29 +1,40 @@
-# Vayu Weather
+# ☁️ Vayu Weather
 
-A simple, modern React weather application built with Vite and Tailwind CSS.
+A modern, responsive weather application built with React, Vite, and Tailwind CSS. Features a beautiful glass morphism UI with light/dark theme support.
 
-## Features
+![Vayu Weather App](https://img.shields.io/badge/React-18-blue) ![Vite](https://img.shields.io/badge/Vite-5-purple) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-cyan)
 
-- 🔍 Search weather by city name
-- 🌡️ Display temperature in Celsius
-- 💨 Show humidity and wind speed
-- 🎨 Clean, modern UI with glass morphism
-- 📱 Fully responsive design
-- ⚡ Fast loading with Vite
+## ✨ Features
 
-## Project Structure
+- 🔍 **City Search** - Search weather for any city worldwide
+- 🌡️ **Real-time Weather** - Current temperature, humidity, wind speed
+- 🌓 **Dark/Light Theme** - Toggle between themes with persistence
+- 🎨 **Glass Morphism UI** - Modern, beautiful design
+- 📱 **Fully Responsive** - Works on all devices
+- ⚡ **Fast & Lightweight** - Built with Vite for optimal performance
+- 🎯 **Default City** - Loads Indore weather on startup
+
+## 🛠️ Tech Stack
+
+- **React 18** - Functional components with hooks
+- **Vite 5** - Next-gen frontend tooling
+- **Tailwind CSS 3** - Utility-first CSS framework
+- **OpenWeatherMap API** - Weather data provider
+
+## 📁 Project Structure
 
 ```
 vayu-weather-app/
 ├── src/
 │   ├── components/
-│   │   ├── SearchBar.jsx
-│   │   └── WeatherCard.jsx
+│   │   ├── SearchBar.jsx      # City search input
+│   │   ├── WeatherCard.jsx    # Weather display card
+│   │   └── ThemeToggle.jsx    # Dark/light mode toggle
 │   ├── services/
-│   │   └── weatherApi.js
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
+│   │   └── weatherApi.js      # API calls
+│   ├── App.jsx                # Main app component
+│   ├── main.jsx               # Entry point
+│   └── index.css              # Global styles & themes
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -31,44 +42,68 @@ vayu-weather-app/
 └── postcss.config.js
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
-### 1. Install Dependencies
+### Prerequisites
 
+- Node.js 16+ installed
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Anmol-dev21/vayu-weather-app.git
+cd vayu-weather-app
+```
+
+2. **Install dependencies**
 ```bash
 npm install
 ```
 
-### 2. Run Development Server
-
+3. **Run development server**
 ```bash
 npm run dev
 ```
 
-Open http://localhost:5173 in your browser.
+4. **Open in browser**
+```
+http://localhost:5173
+```
 
-### 3. Build for Production
+### Build for Production
 
 ```bash
 npm run build
 ```
 
-## Deployment
+The build output will be in the `dist` folder.
 
-### Netlify / Vercel
+## 🎨 Color Themes
 
-1. Push to GitHub
-2. Connect repo
-3. Build command: `npm run build`
-4. Publish directory: `dist`
+### Light Mode
+- Blue gradient background (#3b82f6 → #bfdbfe)
+- White glass cards
+- Dark blue text
 
-## Tech Stack
+### Dark Mode
+- Black to navy gradient (#000000 → #1e3a5f)
+- Dark glass cards with blue accents
+- White text
 
-- React 18
-- Vite 5
-- Tailwind CSS 3
-- OpenWeatherMap API
+## 📝 API
 
-## License
+This app uses the [OpenWeatherMap API](https://openweathermap.org/api) for weather data.
 
-MIT
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Anmol** - [GitHub](https://github.com/Anmol-dev21)
+
+---
+
+⭐ Star this repo if you found it helpful!
